@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		192B59C51C57BE18005DA03F /* TestFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 192B59C41C57BE18005DA03F /* TestFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		192B59CD1C57BEFC005DA03F /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192B59CC1C57BEFC005DA03F /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		192B59C11C57BE18005DA03F /* TestFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		192B59C41C57BE18005DA03F /* TestFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestFramework.h; sourceTree = "<group>"; };
 		192B59C61C57BE18005DA03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192B59CC1C57BEFC005DA03F /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				192B59C41C57BE18005DA03F /* TestFramework.h */,
+				192B59CC1C57BEFC005DA03F /* Test.swift */,
 				192B59C61C57BE18005DA03F /* Info.plist */,
 			);
 			path = TestFramework;
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192B59CD1C57BEFC005DA03F /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +232,7 @@
 		192B59CA1C57BE18005DA03F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -238,12 +243,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.databisse.TestFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		192B59CB1C57BE18005DA03F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
